@@ -31,6 +31,8 @@ public class CartPage {
 	@FindBy(xpath="//a[contains(text(),'View Product')][1]") WebElement ViewProductLink;
 	@FindBy(xpath="//td[@class='cart_price']/p") WebElement unitPrice;
 	@FindBy(xpath="//p[@class='cart_total_price']") WebElement quantityPrice;
+	@FindBy(xpath="//a[normalize-space()='Proceed To Checkout']") WebElement proceedToCheckoutBtn;
+	@FindBy(xpath="//p[@class='text-center'][1]") WebElement guestCheckoutModalMsg;
 	
 	public void addProductToCartAsGuest() {
 		ProductsLink.click();
@@ -90,6 +92,13 @@ public class CartPage {
 		String qty = quantityBtn.getText();
 		return Integer.parseInt(qty);
 	}
+	
+	public boolean isGuestCheckoutMessageDisplayed() {
+		proceedToCheckoutBtn.click();
+		String guestCheckoutModalMsgText = guestCheckoutModalMsg.getText();
+		return guestCheckoutModalMsgText.contains("Register / Login account to proceed on checkout.");
+	}
+
 	
 
 

@@ -1,45 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-17T12:49:35 EDT" name="Default suite" finished-at="2025-06-17T12:50:14 EDT" duration-ms="38456">
+  <suite started-at="2025-06-18T13:16:43 EDT" name="Default suite" finished-at="2025-06-18T13:16:57 EDT" duration-ms="13928">
     <groups>
     </groups>
-    <test started-at="2025-06-17T12:49:35 EDT" name="Default test" finished-at="2025-06-17T12:50:14 EDT" duration-ms="38456">
+    <test started-at="2025-06-18T13:16:43 EDT" name="Default test" finished-at="2025-06-18T13:16:57 EDT" duration-ms="13928">
       <class name="tests.CartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@1165b38]" started-at="2025-06-17T12:49:35 EDT" name="setup" finished-at="2025-06-17T12:49:38 EDT" duration-ms="2915" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@5542c4ed]" started-at="2025-06-18T13:16:43 EDT" name="setup" finished-at="2025-06-18T13:16:48 EDT" duration-ms="4751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addProductsToCartAsGuest()[pri:0, instance:tests.CartTest@1165b38]" started-at="2025-06-17T12:49:38 EDT" name="addProductsToCartAsGuest" finished-at="2025-06-17T12:49:47 EDT" duration-ms="8919" status="PASS">
+        <test-method signature="verifyCheckoutMessageGuestUser()[pri:0, instance:tests.CartTest@5542c4ed]" started-at="2025-06-18T13:16:48 EDT" name="verifyCheckoutMessageGuestUser" finished-at="2025-06-18T13:16:56 EDT" duration-ms="8781" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addProductsToCartAsGuest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@1165b38]" started-at="2025-06-17T12:49:47 EDT" name="tearDown" finished-at="2025-06-17T12:49:47 EDT" duration-ms="378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@1165b38]" started-at="2025-06-17T12:49:47 EDT" name="setup" finished-at="2025-06-17T12:49:49 EDT" duration-ms="2004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="removeProductsFromCartAsGuest()[pri:0, instance:tests.CartTest@1165b38]" started-at="2025-06-17T12:49:49 EDT" name="removeProductsFromCartAsGuest" finished-at="2025-06-17T12:49:58 EDT" duration-ms="8898" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- removeProductsFromCartAsGuest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@1165b38]" started-at="2025-06-17T12:49:58 EDT" name="tearDown" finished-at="2025-06-17T12:49:59 EDT" duration-ms="292" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CartTest@1165b38]" started-at="2025-06-17T12:49:59 EDT" name="setup" finished-at="2025-06-17T12:50:01 EDT" duration-ms="2368" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyUpdateProductQuantity()[pri:0, instance:tests.CartTest@1165b38]" started-at="2025-06-17T12:50:01 EDT" name="verifyUpdateProductQuantity" finished-at="2025-06-17T12:50:13 EDT" duration-ms="12255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUpdateProductQuantity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@1165b38]" started-at="2025-06-17T12:50:13 EDT" name="tearDown" finished-at="2025-06-17T12:50:14 EDT" duration-ms="372" status="PASS">
+        </test-method> <!-- verifyCheckoutMessageGuestUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CartTest@5542c4ed]" started-at="2025-06-18T13:16:56 EDT" name="tearDown" finished-at="2025-06-18T13:16:57 EDT" duration-ms="312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

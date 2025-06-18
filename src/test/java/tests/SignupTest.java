@@ -20,26 +20,17 @@ public class SignupTest {
 	
 	@BeforeMethod
 	public void setup() {
-		
 		driver = new ChromeDriver();
-		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
 		driver.manage().window().maximize();
-		
 		signupPage = new SignupPage(driver);
 	}
 	@Test(priority=1)
 	public void signupWithNewEmailTest() {
-		
 		driver.get("https://automationexercise.com/login");
-		
 		String name = "Test User";
-		
 		String email = "test_" + UUID.randomUUID().toString().substring(0,5) + "@mail.com";
-		
 		signupPage.enterSignupInfo(name, email);
-		
 		Assert.assertTrue(signupPage.isSignupMessageDisplayed(), "Signup failed or signup message not displayed");
 		
 	}
@@ -60,8 +51,6 @@ public class SignupTest {
 			
 		};
 	}
-	
-	
 	
 	
 	@AfterMethod

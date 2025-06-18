@@ -18,11 +18,8 @@ public class LoginTest {
 	@BeforeMethod
 	public void setup() {
 		driver = new ChromeDriver();
-		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
 		driver.manage().window().maximize();
-		
 		loginPage = new LoginPage(driver);
 	};
 	
@@ -32,7 +29,6 @@ public class LoginTest {
 		loginPage.login("jmathew330@gmail.com", "Eakonil98!");
 		String loginMsg = loginPage.getLoginMsg();
 		Assert.assertTrue(loginMsg.contains("Logged in as"), "Expected login message not found. Actual: " + loginMsg);
-		System.out.println(loginMsg);
 	}
 	
 	
@@ -42,7 +38,6 @@ public class LoginTest {
 		loginPage.login("invalidemail123@test.com", "wrongpassword");
 		String errorMsg = loginPage.getErrorMessage();
 		Assert.assertTrue(errorMsg.contains("Your email or password is incorrect!"), "Expected error message not found. Actual: " + errorMsg);
-		System.out.println(errorMsg);
 	}
 	
 	@Test(priority=3)
