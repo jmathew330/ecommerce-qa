@@ -21,21 +21,6 @@ This project is a test automation suite for the e-commerce site [Automation Exer
 
 ---
 
-## 📁 Project Structure
-
-/ecommerce-automation
-│
-├── /src
-│ └── /pages # Page Object Models
-│ └── /tests # TestNG test classes
-│
-├── testng.xml # Test suite config
-├── pom.xml # Maven dependencies
-├── README.md # Project overview
-
-
----
-
 ## 🔧 Tech Stack
 
 | Tool        | Purpose                     |
@@ -45,12 +30,3 @@ This project is a test automation suite for the e-commerce site [Automation Exer
 | TestNG      | Test Execution Framework    |
 | Maven       | Build and Dependency Tool   |
 | Git         | Version Control             |
-
----
-
-## 🛠️ Setup Instructions
-
-1. **Clone this repo**  
-   ```bash
-   git clone https://github.com/yourusername/ecommerce-automation.git
-   cd ecommerce-automation
