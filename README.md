@@ -6,19 +6,25 @@ This project is a test automation suite for the e-commerce site [Automation Exer
 
 ## 🚀 Features Tested
 
-### 🔐 Login Module
+### 🔐 Login & Signup Module
 - ✅ Login with valid credentials  
 - ❌ Login with invalid credentials  
-- ⛔ Login with blank email and password  
 - 🔁 Logout functionality  
-- 🔍 "Logged in as [username]" message validation
+- ✉️ Signup with new email  
+- ⚠️ Signup with existing email  
+- 🔍 "Logged in as" message verification
 
 ### 🛒 Cart Module
 - ➕ Add product to cart as guest  
 - ➖ Remove product from cart  
-- 🔄 Update product quantity and verify total price  
-- 💰 Price calculation validation: `Unit Price × Quantity = Total`
-- 🧾 Message for guest users to log-in before checkout
+- 🔁 Update product quantity and verify total price  
+- 💰 Price calculation: Unit Price × Quantity = Total  
+- 🚫 Guest checkout redirect to Login/Signup page  
+- 🗑️ Verify cart is empty after removing all products
+
+### 📬 Contact Us Module
+- 🧾 "Get in Touch" section is present  
+- ✅ Success message after submitting valid contact details
 
 ---
 
