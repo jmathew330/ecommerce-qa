@@ -23,7 +23,7 @@ public class CartTest {
 		driver.manage().window().maximize();
 	}
 	@Test
-	public void addProductsToCartAsGuest() throws InterruptedException {
+	public void testAddProductsToCartAsGuest() throws InterruptedException {
 		driver.get("https://automationexercise.com/");
 		cartPage = new CartPage(driver);
 		cartPage.addProductToCartAsGuest();
@@ -31,17 +31,16 @@ public class CartTest {
 	}
 	
 	@Test
-	public void removeProductsFromCartAsGuest() {
+	public void testRemoveProductsFromCartAsGuest() {
 		driver.get("https://automationexercise.com/");
 		cartPage = new CartPage(driver);
 		cartPage.removeProductFromCartAsGuest();
 		Assert.assertTrue(cartPage.isCartEmpty(), "Cart is not empty after removing product");
 	}
 	@Test
-	public void verifyUpdateProductQuantity() {
+	public void testUpdateProductQuantity() {
 		driver.get("https://automationexercise.com/");
 		cartPage = new CartPage(driver);
-
 		cartPage.viewProductInfo();
 		cartPage.setQuantity(4);
 		double unitPrice = cartPage.getUnitPrice();
@@ -52,7 +51,7 @@ public class CartTest {
 	}
 	
 	@Test
-	public void verifyCheckoutMessageGuestUser() {
+	public void testCheckoutMessageGuestUser() {
 		driver.get("https://automationexercise.com/");
 		cartPage = new CartPage(driver);
 		cartPage.addProductToCartAsGuest();

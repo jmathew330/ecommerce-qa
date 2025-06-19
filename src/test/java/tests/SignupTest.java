@@ -26,7 +26,7 @@ public class SignupTest {
 		signupPage = new SignupPage(driver);
 	}
 	@Test(priority=1)
-	public void signupWithNewEmailTest() {
+	public void testSignupWithNewEmail() {
 		driver.get("https://automationexercise.com/login");
 		String name = "Test User";
 		String email = "test_" + UUID.randomUUID().toString().substring(0,5) + "@mail.com";
@@ -36,7 +36,7 @@ public class SignupTest {
 	}
 	
 	@Test(priority=2, dataProvider="invalidData")
-	public void signupWithExistingEmailTest(String name, String email) {
+	public void testSignupWithExistingEmail(String name, String email) {
 		driver.get("https://automationexercise.com/login");
 		signupPage.enterSignupInfo(name, email);
 		String emailExistsMsg = signupPage.getEmailExistsMsg();

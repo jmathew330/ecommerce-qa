@@ -24,7 +24,7 @@ public class LoginTest {
 	};
 	
 	@Test(priority=1)
-	public void validLoginTest() {
+	public void testValidLogin() {
 		driver.get("https://automationexercise.com/login");
 		loginPage.login("jmathew330@gmail.com", "Eakonil98!");
 		String loginMsg = loginPage.getLoginMsg();
@@ -33,7 +33,7 @@ public class LoginTest {
 	
 	
 	@Test(priority=2)
-	public void invalidLoginTest() {
+	public void testInvalidLogin() {
 		driver.get("https://automationexercise.com/login");
 		loginPage.login("invalidemail123@test.com", "wrongpassword");
 		String errorMsg = loginPage.getErrorMessage();
@@ -41,7 +41,7 @@ public class LoginTest {
 	}
 	
 	@Test(priority=3)
-	public void logoutTest() {
+	public void testLogout() {
 		driver.get("https://automationexercise.com/login");
 		loginPage.login("jmathew330@gmail.com", "Eakonil98!");
 		loginPage.clickLogout();
