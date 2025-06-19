@@ -18,6 +18,7 @@ This project is a test automation suite for the e-commerce site [Automation Exer
 - ➖ Remove product from cart  
 - 🔄 Update product quantity and verify total price  
 - 💰 Price calculation validation: `Unit Price × Quantity = Total`
+- 🧾 Message for guest users to log-in before checkout
 
 ---
 
