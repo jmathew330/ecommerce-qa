@@ -10,6 +10,7 @@
     <class name="tests.SignupTest"/>
     <class name="tests.CartTest"/>
     <class name="tests.ContactTest"/>
+    <class name="tests.ReviewTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

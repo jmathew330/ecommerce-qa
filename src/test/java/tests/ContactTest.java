@@ -38,6 +38,7 @@ public class ContactTest {
 		Assert.assertTrue(contactPage.isSuccessMsgDisplayed());
 		Assert.assertTrue(contactPage.getSuccessMsgText().contains("Success! Your details have been submitted successfully."));
 	}
+
 	
 	@AfterMethod
 	public void tearDown() {

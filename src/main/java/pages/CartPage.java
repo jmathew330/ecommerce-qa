@@ -98,7 +98,6 @@ public class CartPage {
 		String guestCheckoutModalMsgText = guestCheckoutModalMsg.getText();
 		return guestCheckoutModalMsgText.contains("Register / Login account to proceed on checkout.");
 	}
-
 	
 
 
