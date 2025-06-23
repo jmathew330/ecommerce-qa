@@ -26,14 +26,22 @@ This project is a test automation suite for the e-commerce site [Automation Exer
 - 🧾 "Get in Touch" section is present  
 - ✅ Success message after submitting valid contact details
 
+### ⭐ Product Review
+- 📝 Verify success message after submitting a product review
+
+### 📰 Subscription
+- 📝 Verify success message on newsletter subscription
+
 ---
 
 ## 🔧 Tech Stack
 
-| Tool        | Purpose                     |
-|-------------|-----------------------------|
-| Java        | Programming Language        |
-| Selenium    | Web UI Automation           |
-| TestNG      | Test Execution Framework    |
-| Maven       | Build and Dependency Tool   |
-| Git         | Version Control             |
+- **Language:** Java  
+- **Automation Tool:** Selenium WebDriver  
+- **Framework:** TestNG  
+- **Build Tool:** Maven  
+- **Test Reporting:** ExtentReports  
+- **Design Pattern:** Page Object Model (POM)  
+- **IDE:** Eclipse  
+- **Version Control:** Git  
+- **Browser:** ChromeDriver
