@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="tests.ExtentReportManager"></listener>
 	</listeners>
-  <test thread-count="5" name="Test">
+  <test name="Test" thread-count="5">
     <classes>
     <class name="tests.LoginTest"/>
     <class name="tests.SignupTest"/>
@@ -12,5 +12,5 @@
     <class name="tests.ContactTest"/>
     <class name="tests.ReviewTest"/>
     </classes>
-  </test> <!-- Test -->
+    </test>
 </suite> <!-- Suite -->

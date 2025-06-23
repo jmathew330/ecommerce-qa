@@ -25,6 +25,8 @@ public class SignupTest {
 		driver.manage().window().maximize();
 		signupPage = new SignupPage(driver);
 	}
+	
+	
 	@Test(priority=1)
 	public void testSignupWithNewEmail() {
 		driver.get("https://automationexercise.com/login");

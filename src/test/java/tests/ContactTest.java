@@ -22,6 +22,7 @@ public class ContactTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 	}
+
 	
 	@Test(priority=1)
 	public void testHeadingVisibility() {

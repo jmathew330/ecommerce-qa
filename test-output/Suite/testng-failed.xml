@@ -4,16 +4,95 @@
   <listeners>
     <listener class-name="tests.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test-Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="tests.SignupTest">
+        <methods>
+          <include name="testSignupWithNewEmail"/>
+          <include name="tearDown"/>
+          <include name="testSignupWithExistingEmail" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.SignupTest -->
       <class name="tests.LoginTest">
         <methods>
+          <include name="testValidLogin"/>
+          <include name="testLogout"/>
+          <include name="testInvalidLogin"/>
           <include name="setup"/>
-          <include name="validLoginTest"/>
-          <include name="logoutTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- tests.LoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test-Chrome(failed) -->
+  <test thread-count="5" name="Test-Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.SignupTest">
+        <methods>
+          <include name="testSignupWithNewEmail"/>
+          <include name="tearDown"/>
+          <include name="testSignupWithExistingEmail" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.SignupTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="testLogout"/>
+          <include name="testInvalidLogin"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.CartTest">
+        <methods>
+          <include name="setup"/>
+          <include name="testAddProductsToCartAsGuest"/>
+          <include name="testUpdateProductQuantity"/>
+          <include name="tearDown"/>
+          <include name="testCheckoutMessageGuestUser"/>
+          <include name="testRemoveProductsFromCartAsGuest"/>
+        </methods>
+      </class> <!-- tests.CartTest -->
+      <class name="tests.ReviewTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testReviewSuccess"/>
+        </methods>
+      </class> <!-- tests.ReviewTest -->
+      <class name="tests.ContactTest">
+        <methods>
+          <include name="setup"/>
+          <include name="testHeadingVisibility"/>
+          <include name="tearDown"/>
+          <include name="testFormSuccess"/>
+        </methods>
+      </class> <!-- tests.ContactTest -->
+    </classes>
+  </test> <!-- Test-Firefox(failed) -->
+  <test thread-count="5" name="Test-Edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="tests.SignupTest">
+        <methods>
+          <include name="testSignupWithNewEmail"/>
+          <include name="tearDown"/>
+          <include name="testSignupWithExistingEmail" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.SignupTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="testLogout"/>
+          <include name="testInvalidLogin"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Test-Edge(failed) -->
 </suite> <!-- Failed suite [Suite] -->
