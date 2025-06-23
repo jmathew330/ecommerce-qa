@@ -29,6 +29,9 @@ This project is a test automation suite for the e-commerce site [Automation Exer
 ### ⭐ Product Review
 - 📝 Verify success message after submitting a product review
 
+### 📰 Subscription
+- 📝 Verify success message on newsletter subscription
+
 ---
 
 ## 🔧 Tech Stack
