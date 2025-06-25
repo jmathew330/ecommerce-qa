@@ -5,8 +5,8 @@
     <classes>
       <class name="tests.SignupTest">
         <methods>
-          <include name="testSignupWithNewEmail"/>
           <include name="setup"/>
+          <include name="TC_SIGNUP_002_testSignupWithExistingEmail"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- tests.SignupTest -->

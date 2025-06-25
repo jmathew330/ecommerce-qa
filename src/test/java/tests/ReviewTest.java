@@ -12,7 +12,7 @@ public class ReviewTest extends TestBase {
 	CartPage cartPage;
 	
 	@Test
-	public void testReviewSuccess() {
+	public void TC_REVIEW_001_testReviewSuccess() {
 		reviewSection = new ReviewSection(driver);
 		cartPage = new CartPage(driver);
 		driver.get("https://automationexercise.com/");

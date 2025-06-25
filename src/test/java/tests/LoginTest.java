@@ -10,7 +10,7 @@ public class LoginTest extends TestBase {
 	LoginPage loginPage;
 	
 	@Test(priority=1)
-	public void testValidLogin() {
+	public void TC_LOGIN_001_testValidLogin() {
 		loginPage = new LoginPage(driver);
 		loginPage.clickLoginLink();
 		loginPage.login("jmathew330@gmail.com", "Eakonil98!");
@@ -20,7 +20,7 @@ public class LoginTest extends TestBase {
 	
 	
 	@Test(priority=2)
-	public void testInvalidLogin() {
+	public void TC_LOGIN_002_testInvalidLogin() {
 		loginPage = new LoginPage(driver);
 		loginPage.clickLoginLink();
 		loginPage.login("invalidemail123@test.com", "wrongpassword");
@@ -29,7 +29,7 @@ public class LoginTest extends TestBase {
 	}
 	
 	@Test(priority=3)
-	public void testLogout() {
+	public void TC_LOGOUT_001_testLogout() {
 		loginPage = new LoginPage(driver);
 		loginPage.clickLoginLink();
 		loginPage.login("jmathew330@gmail.com", "Eakonil98!");
