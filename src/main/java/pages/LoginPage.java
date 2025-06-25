@@ -3,22 +3,27 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
 	
 	WebDriver driver;
 	
+	public LoginPage(WebDriver driver){
+		super(driver);
+		this.driver = driver;
+	}
+	
+	@FindBy(xpath="//a[normalize-space()='Signup / Login']") WebElement loginLink;
 	@FindBy(xpath="//input[@data-qa='login-email']") WebElement emailInput;
 	@FindBy(xpath="//input[@placeholder='Password']") WebElement passwordInput;
 	@FindBy(xpath="//button[normalize-space()='Login']") WebElement loginBtn;
 	@FindBy(xpath="//p[contains(text(),'incorrect')]") WebElement errorMsg;
 	@FindBy(xpath="//a[contains(text(),'Logged in as')]") WebElement loginMsgEl;
 	@FindBy(xpath="//a[contains(text(),'Logout')]") WebElement logoutBtn;
+
 	
-	public LoginPage(WebDriver driver){
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
+	public void clickLoginLink() {
+		loginLink.click();
 	}
 	
 	public void enterEmail(String email) {

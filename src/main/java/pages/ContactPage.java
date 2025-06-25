@@ -6,19 +6,18 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ContactPage {
+public class ContactPage extends BasePage {
 	
 	WebDriver driver;
 	WebDriverWait wait;
 	Alert alert;
 	
 	public ContactPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(xpath="//h2[normalize-space()='Get In Touch']") WebElement heading;
