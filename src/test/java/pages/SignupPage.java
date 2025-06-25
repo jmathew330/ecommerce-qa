@@ -34,7 +34,8 @@ public class SignupPage extends BasePage {
 	}
 	
 	public String getEmailExistsMsg() {
-		return emailExistsMsg.getText();
+		String emailExistsMsgTxt = emailExistsMsg.getText();
+		return emailExistsMsgTxt;
 	}
 	
 	
