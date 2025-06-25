@@ -45,3 +45,8 @@ This project is a test automation suite for the e-commerce site [Automation Exer
 - **IDE:** Eclipse  
 - **Version Control:** Git  
 - **Browser:** ChromeDriver
+
+## Test Cases in JIRA
+<img width="1280" alt="Screen Shot 2025-06-23 at 1 21 16 PM" src="https://github.com/user-attachments/assets/61ac3837-40e1-44b0-a208-c8ce21e3a73b" />
+
+
